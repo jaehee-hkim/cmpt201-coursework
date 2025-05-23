@@ -10,7 +10,7 @@ int main(void) {
   char *line = NULL;
   size_t n = 0;
 
-  printf("Please enter some text: \n");
+  printf("Please enter some text: ");
 
   if (getline(&line, &n, stdin) != -1) {
     printf("Tokens:\n");
@@ -27,19 +27,4 @@ int main(void) {
   }
 
   return 0;
-
-  /*ssize_t num_char = getline(&buff, &size, stdin);
-  if (num_char == -1) {
-    perror("getline failed");
-    exit(EXIT_FAILURE);
-  }
-
-  char *saveptr;
-  char *ret = strtok_r(buff, " ", &saveptr);
-
-
-  char *ret2 = strtok_r(NULL, " ", &saveptr);
-
-  free(buff);
-  */
 }
