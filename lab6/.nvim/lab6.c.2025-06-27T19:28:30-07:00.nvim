@@ -1,0 +1,4 @@
+ char dis_index[16];
+          int num = snprintf(dis_index, sizeof(dis_index), "%d\t", i);
+          write(STDOUT_FILENO, dis_index, num);::          write(STDOUT_FILENO, history[int_index], strlen(history[int_index]));
+        }
